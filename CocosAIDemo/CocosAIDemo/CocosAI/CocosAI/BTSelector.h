@@ -14,6 +14,8 @@
 
 USING_NS_CC;
 
+namespace CocosAI {
+
 class BTSelector :public BTNode
 {
 public:
@@ -23,5 +25,7 @@ public:
     CREATE_FUNC(BTSelector);
     virtual int behave();
 };
+    
+}
 
 #endif /* defined(__CocosAI__BTSelector__) */

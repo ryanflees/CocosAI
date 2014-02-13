@@ -10,7 +10,8 @@
 #include "RCBehaviorTree.h"
 
 USING_NS_CC;
-USING_NS_AI;
+
+namespace CocosAI {
 
 BTNode::BTNode():m_btChildren()
 ,m_behaviorStatus(kBehaveReady)
@@ -60,4 +61,6 @@ void BTNode::resetBehavior()
         BTNode *node = (BTNode*)m_btChildren->objectAtIndex(i);
         node->resetBehavior();
     }
+}
+    
 }

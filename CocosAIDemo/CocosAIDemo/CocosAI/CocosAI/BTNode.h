@@ -11,6 +11,8 @@
 
 #include "cocos2d.h"
 
+namespace CocosAI {
+
 class BTNode :public cocos2d::CCNode
 {
 public:
@@ -26,5 +28,7 @@ protected:
     int m_behaviorStatus;
     cocos2d::CCArray *m_btChildren;
 };
+
+}
 
 #endif /* defined(__CocosAI__BTNode__) */

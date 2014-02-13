@@ -14,6 +14,8 @@
 
 USING_NS_CC;
 
+namespace CocosAI {
+
 class BTAction;
 class BTActionDelegate
 {
@@ -33,5 +35,7 @@ public:
 private:
 	CC_SYNTHESIZE(BTActionDelegate*, m_delegate, Delegate);
 };
+    
+}
 
 #endif /* defined(__CocosAI__BTAction__) */

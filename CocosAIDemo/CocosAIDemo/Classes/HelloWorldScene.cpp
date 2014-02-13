@@ -30,9 +30,6 @@ bool HelloWorld::init()
         return false;
     }
     
-    BTNode* node = BTNode::create();
-    
-
     /////////////////////////////
     // 2. add a menu item with "X" image, which is clicked to quit the program
     //    you may modify it.

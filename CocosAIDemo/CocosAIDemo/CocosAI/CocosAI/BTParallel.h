@@ -14,6 +14,8 @@
 
 USING_NS_CC;
 
+namespace CocosAI {
+
 class BTParallel :public BTNode
 {
 public:
@@ -23,5 +25,7 @@ public:
     CREATE_FUNC(BTParallel);
     virtual int behave(void);
 };
+
+}
 
 #endif /* defined(__CocosAI__BTParallel__) */

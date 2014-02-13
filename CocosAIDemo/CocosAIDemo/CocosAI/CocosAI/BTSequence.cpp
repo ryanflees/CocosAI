@@ -9,7 +9,7 @@
 #include "BTSequence.h"
 #include "RCBehaviorTree.h"
 
-USING_NS_AI;
+namespace CocosAI {
 
 BTSequence::BTSequence()
 {
@@ -23,7 +23,7 @@ BTSequence::~BTSequence()
 
 bool BTSequence::init()
 {
-    if (!CCNode::init())
+    if (!BTNode::init())
     {
         return false;
     }
@@ -75,3 +75,4 @@ void BTSequence::actionFinished( )
     }
 }
 
+}

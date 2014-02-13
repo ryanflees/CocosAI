@@ -10,7 +10,7 @@
 #include "RCBehaviorTree.h"
 #include "BTSequence.h"
 
-USING_NS_AI;
+namespace CocosAI {
 
 BTAction::BTAction():m_delegate(NULL)
 {
@@ -24,7 +24,7 @@ BTAction::~BTAction()
 
 bool BTAction::init()
 {
-    if (!CCNode::init())
+    if (!BTNode::init())
     {
         return false;
     }
@@ -63,4 +63,6 @@ void BTAction::actionFinished()
 	{
         sequence->actionFinished();
     }
+}
+    
 }

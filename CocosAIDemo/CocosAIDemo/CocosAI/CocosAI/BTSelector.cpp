@@ -9,7 +9,7 @@
 #include "BTSelector.h"
 #include "RCBehaviorTree.h"
 
-USING_NS_AI;
+namespace CocosAI {
 
 BTSelector::BTSelector()
 {
@@ -23,7 +23,7 @@ BTSelector::~BTSelector()
 
 bool BTSelector::init()
 {
-    if (!CCNode::init())
+    if (!BTNode::init())
     {
         return false;
     }
@@ -61,6 +61,6 @@ int BTSelector::behave()
     return kBehaveFailure;
 }
 
-
+}
 
 

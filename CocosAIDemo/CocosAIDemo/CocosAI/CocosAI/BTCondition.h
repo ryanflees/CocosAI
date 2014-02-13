@@ -14,6 +14,8 @@
 
 USING_NS_CC;
 
+namespace CocosAI {
+
 class BTCondition;
 class BTConditionDelegate
 {
@@ -33,5 +35,7 @@ public:
 private:
     CC_SYNTHESIZE(BTConditionDelegate*, m_delegate, Delegate);
 };
+    
+}
 
 #endif /* defined(__CocosAI__BTCondition__) */

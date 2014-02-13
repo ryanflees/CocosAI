@@ -9,7 +9,7 @@
 #ifndef CocosAI_RCBehaviorTree_h
 #define CocosAI_RCBehaviorTree_h
 
-#define USING_NS_AI using namespace CocosAI;
+#define USING_NS_AI using namespace CocosAI
 
 namespace CocosAI {
     
@@ -27,5 +27,12 @@ namespace CocosAI {
     }BehaveResult;
     
 }
+
+#include "BTNode.h"
+#include "BTParallel.h"
+#include "BTSelector.h"
+#include "BTSequence.h"
+#include "BTAction.h"
+#include "BTCondition.h"
 
 #endif

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BBABBB718AC8C8700CE076F /* Bullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBABBB518AC8C8700CE076F /* Bullet.cpp */; };
+		6BBABBBC18AC8DB300CE076F /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBABBBA18AC8DB300CE076F /* Player.cpp */; };
 		6BDB6AD818AA47DA00BFE743 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDB6AD718AA47DA00BFE743 /* QuartzCore.framework */; };
 		6BDB6ADA18AA47DA00BFE743 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDB6AD918AA47DA00BFE743 /* OpenGLES.framework */; };
 		6BDB6ADC18AA47DA00BFE743 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDB6ADB18AA47DA00BFE743 /* OpenAL.framework */; };
@@ -280,10 +282,37 @@
 		6BDB6E7518AA47E000BFE743 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDB6E7418AA47E000BFE743 /* libwebsockets.a */; };
 		6BDB6E7B18AA47E000BFE743 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BDB6E7A18AA47E000BFE743 /* AppDelegate.cpp */; };
 		6BDB6E7E18AA47E000BFE743 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BDB6E7D18AA47E000BFE743 /* HelloWorldScene.cpp */; };
-		6BDB6EC318AA546A00BFE743 /* libCocosAI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDB6EC218AA546A00BFE743 /* libCocosAI.a */; };
+		6BDB6EF918AB4F0900BFE743 /* font in Resources */ = {isa = PBXBuildFile; fileRef = 6BDB6EF718AB4F0900BFE743 /* font */; };
+		6BDB6EFA18AB4F0900BFE743 /* ui in Resources */ = {isa = PBXBuildFile; fileRef = 6BDB6EF818AB4F0900BFE743 /* ui */; };
+		6BDB6EFC18AB4F1800BFE743 /* ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 6BDB6EFB18AB4F1800BFE743 /* ccbi */; };
+		6BDB6EFF18AB4F2F00BFE743 /* MainMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BDB6EFD18AB4F2F00BFE743 /* MainMenu.cpp */; };
+		6BDB6F0418AB4FEF00BFE743 /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BDB6F0218AB4FEF00BFE743 /* SceneManager.cpp */; };
+		6BDB6F0F18AB54E900BFE743 /* ComicWar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BDB6F0D18AB54E900BFE743 /* ComicWar.cpp */; };
+		6BDB6F1418AB572600BFE743 /* Imagesetfile in Resources */ = {isa = PBXBuildFile; fileRef = 6BDB6F1318AB572600BFE743 /* Imagesetfile */; };
+		6BDB6F1718AB575C00BFE743 /* ComicWarUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BDB6F1518AB575C00BFE743 /* ComicWarUI.cpp */; };
+		6BDB6F2318AB5A6600BFE743 /* RCUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BDB6F1F18AB5A6600BFE743 /* RCUnit.cpp */; };
+		6BDB6F2418AB5A6600BFE743 /* RCUnitCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BDB6F2118AB5A6600BFE743 /* RCUnitCache.cpp */; };
+		6BDB6F2918AB5B5900BFE743 /* Enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BDB6F2718AB5B5900BFE743 /* Enemy.cpp */; };
+		6BDB6F2B18AB5E1800BFE743 /* comicwar in Resources */ = {isa = PBXBuildFile; fileRef = 6BDB6F2A18AB5E1800BFE743 /* comicwar */; };
+		6BE2FF2718AB6A8800C15625 /* libCocosAI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B07125118AB629600F9F97D /* libCocosAI.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6B07125018AB629600F9F97D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BDB6EB718AA497E00BFE743 /* CocosAI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6BDB6EBD18AA4B5700BFE743;
+			remoteInfo = CocosAI;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		6B5783D418ACC5C7004B131E /* CocosAI.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocosAI.pch; sourceTree = "<group>"; };
+		6BBABBB518AC8C8700CE076F /* Bullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Bullet.cpp; path = Classes/Bullet.cpp; sourceTree = "<group>"; };
+		6BBABBB618AC8C8700CE076F /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bullet.h; path = Classes/Bullet.h; sourceTree = "<group>"; };
+		6BBABBBA18AC8DB300CE076F /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Player.cpp; path = ../../../../Documents/Project4_CC/ComicWars/ComicWars/Player.cpp; sourceTree = "<group>"; };
+		6BBABBBB18AC8DB300CE076F /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = ../../../../Documents/Project4_CC/ComicWars/ComicWars/Player.h; sourceTree = "<group>"; };
 		6BDB6AD418AA47DA00BFE743 /* CocosAIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocosAIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BDB6AD718AA47DA00BFE743 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6BDB6AD918AA47DA00BFE743 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -875,7 +904,27 @@
 		6BDB6E7C18AA47E000BFE743 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		6BDB6E7D18AA47E000BFE743 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
 		6BDB6EB718AA497E00BFE743 /* CocosAI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocosAI.xcodeproj; path = CocosAIDemo/CocosAI/CocosAI.xcodeproj; sourceTree = "<group>"; };
-		6BDB6EC218AA546A00BFE743 /* libCocosAI.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libCocosAI.a; path = "CocosAIDemo/CocosAI/build/Release-iphoneos/libCocosAI.a"; sourceTree = "<group>"; };
+		6BDB6EC218AA546A00BFE743 /* libCocosAI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCocosAI.a; path = "CocosAIDemo/CocosAI/build/Release-iphoneos/libCocosAI.a"; sourceTree = "<group>"; };
+		6BDB6EF718AB4F0900BFE743 /* font */ = {isa = PBXFileReference; lastKnownFileType = folder; name = font; path = Resources/image/font; sourceTree = "<group>"; };
+		6BDB6EF818AB4F0900BFE743 /* ui */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ui; path = Resources/image/ui; sourceTree = "<group>"; };
+		6BDB6EFB18AB4F1800BFE743 /* ccbi */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ccbi; path = "Resources/ccb/cocosai/Published-iOS/ccbResources/ccbi"; sourceTree = "<group>"; };
+		6BDB6EFD18AB4F2F00BFE743 /* MainMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MainMenu.cpp; path = Classes/MainMenu.cpp; sourceTree = "<group>"; };
+		6BDB6EFE18AB4F2F00BFE743 /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenu.h; path = Classes/MainMenu.h; sourceTree = "<group>"; };
+		6BDB6F0218AB4FEF00BFE743 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneManager.cpp; path = Classes/SceneManager.cpp; sourceTree = "<group>"; };
+		6BDB6F0318AB4FEF00BFE743 /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneManager.h; path = Classes/SceneManager.h; sourceTree = "<group>"; };
+		6BDB6F0D18AB54E900BFE743 /* ComicWar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ComicWar.cpp; path = Classes/ComicWar.cpp; sourceTree = "<group>"; };
+		6BDB6F0E18AB54E900BFE743 /* ComicWar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComicWar.h; path = Classes/ComicWar.h; sourceTree = "<group>"; };
+		6BDB6F1318AB572600BFE743 /* Imagesetfile */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Imagesetfile; path = Resources/image/Imagesetfile; sourceTree = "<group>"; };
+		6BDB6F1518AB575C00BFE743 /* ComicWarUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ComicWarUI.cpp; path = Classes/ComicWarUI.cpp; sourceTree = "<group>"; };
+		6BDB6F1618AB575C00BFE743 /* ComicWarUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComicWarUI.h; path = Classes/ComicWarUI.h; sourceTree = "<group>"; };
+		6BDB6F1F18AB5A6600BFE743 /* RCUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RCUnit.cpp; path = Classes/RCUnit.cpp; sourceTree = "<group>"; };
+		6BDB6F2018AB5A6600BFE743 /* RCUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCUnit.h; path = Classes/RCUnit.h; sourceTree = "<group>"; };
+		6BDB6F2118AB5A6600BFE743 /* RCUnitCache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RCUnitCache.cpp; path = Classes/RCUnitCache.cpp; sourceTree = "<group>"; };
+		6BDB6F2218AB5A6600BFE743 /* RCUnitCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCUnitCache.h; path = Classes/RCUnitCache.h; sourceTree = "<group>"; };
+		6BDB6F2718AB5B5900BFE743 /* Enemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Enemy.cpp; path = Classes/Enemy.cpp; sourceTree = "<group>"; };
+		6BDB6F2818AB5B5900BFE743 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Enemy.h; path = Classes/Enemy.h; sourceTree = "<group>"; };
+		6BDB6F2A18AB5E1800BFE743 /* comicwar */ = {isa = PBXFileReference; lastKnownFileType = folder; name = comicwar; path = Resources/image/comicwar; sourceTree = "<group>"; };
+		6BDB6F2C18AB5F6500BFE743 /* func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = func.h; path = Classes/func.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -883,7 +932,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BDB6EC318AA546A00BFE743 /* libCocosAI.a in Frameworks */,
+				6BE2FF2718AB6A8800C15625 /* libCocosAI.a in Frameworks */,
 				6BDB6ADC18AA47DA00BFE743 /* OpenAL.framework in Frameworks */,
 				6BDB6E7518AA47E000BFE743 /* libwebsockets.a in Frameworks */,
 				6BDB6C4F18AA47DD00BFE743 /* libwebp.a in Frameworks */,
@@ -901,6 +950,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B07124D18AB629600F9F97D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B07125118AB629600F9F97D /* libCocosAI.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BBABBB318AC8C7C00CE076F /* Gear */ = {
+			isa = PBXGroup;
+			children = (
+				6BBABBB518AC8C8700CE076F /* Bullet.cpp */,
+				6BBABBB618AC8C8700CE076F /* Bullet.h */,
+			);
+			name = Gear;
+			sourceTree = "<group>";
+		};
+		6BBABBB918AC8DA900CE076F /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				6BBABBBA18AC8DB300CE076F /* Player.cpp */,
+				6BBABBBB18AC8DB300CE076F /* Player.h */,
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
 		6BDB6ACB18AA47DA00BFE743 = {
 			isa = PBXGroup;
 			children = (
@@ -950,6 +1025,11 @@
 		6BDB6AE818AA47DA00BFE743 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6BDB6F2A18AB5E1800BFE743 /* comicwar */,
+				6BDB6F1318AB572600BFE743 /* Imagesetfile */,
+				6BDB6EFB18AB4F1800BFE743 /* ccbi */,
+				6BDB6EF718AB4F0900BFE743 /* font */,
+				6BDB6EF818AB4F0900BFE743 /* ui */,
 				6BDB6AE918AA47DA00BFE743 /* CloseNormal.png */,
 				6BDB6AEB18AA47DA00BFE743 /* CloseSelected.png */,
 				6BDB6AED18AA47DA00BFE743 /* Default.png */,
@@ -2091,6 +2171,7 @@
 		6BDB6E7618AA47E000BFE743 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6B5783D418ACC5C7004B131E /* CocosAI.pch */,
 				6BDB6E7718AA47E000BFE743 /* Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -2099,7 +2180,10 @@
 		6BDB6E7818AA47E000BFE743 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				6BDB6EC118AA522400BFE743 /* New Group */,
+				6BDB6F2518AB5AB700BFE743 /* Node */,
+				6BDB6F0118AB4F8000BFE743 /* SceneManger */,
+				6BDB6F0518AB542700BFE743 /* BehaviorTreeDemo */,
+				6BDB6EC118AA522400BFE743 /* MainMenu */,
 				6BDB6E7918AA47E000BFE743 /* AppDelegate.h */,
 				6BDB6E7A18AA47E000BFE743 /* AppDelegate.cpp */,
 				6BDB6E7C18AA47E000BFE743 /* HelloWorldScene.h */,
@@ -2108,11 +2192,97 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
-		6BDB6EC118AA522400BFE743 /* New Group */ = {
+		6BDB6EC118AA522400BFE743 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				6BDB6EFD18AB4F2F00BFE743 /* MainMenu.cpp */,
+				6BDB6EFE18AB4F2F00BFE743 /* MainMenu.h */,
+			);
+			name = MainMenu;
+			sourceTree = "<group>";
+		};
+		6BDB6F0118AB4F8000BFE743 /* SceneManger */ = {
+			isa = PBXGroup;
+			children = (
+				6BDB6F0218AB4FEF00BFE743 /* SceneManager.cpp */,
+				6BDB6F0318AB4FEF00BFE743 /* SceneManager.h */,
+			);
+			name = SceneManger;
+			sourceTree = "<group>";
+		};
+		6BDB6F0518AB542700BFE743 /* BehaviorTreeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6BDB6F0918AB544300BFE743 /* Wow */,
+				6BDB6F0818AB543F00BFE743 /* Coc */,
+				6BDB6F0718AB543A00BFE743 /* KingdomRush */,
+				6BDB6F0618AB543200BFE743 /* ComicWar */,
+			);
+			name = BehaviorTreeDemo;
+			sourceTree = "<group>";
+		};
+		6BDB6F0618AB543200BFE743 /* ComicWar */ = {
+			isa = PBXGroup;
+			children = (
+				6BBABBB318AC8C7C00CE076F /* Gear */,
+				6BDB6F2618AB5B3900BFE743 /* Enemy */,
+				6BBABBB918AC8DA900CE076F /* Player */,
+				6BDB6F0D18AB54E900BFE743 /* ComicWar.cpp */,
+				6BDB6F0E18AB54E900BFE743 /* ComicWar.h */,
+				6BDB6F1518AB575C00BFE743 /* ComicWarUI.cpp */,
+				6BDB6F1618AB575C00BFE743 /* ComicWarUI.h */,
+			);
+			name = ComicWar;
+			sourceTree = "<group>";
+		};
+		6BDB6F0718AB543A00BFE743 /* KingdomRush */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = "New Group";
+			name = KingdomRush;
+			sourceTree = "<group>";
+		};
+		6BDB6F0818AB543F00BFE743 /* Coc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Coc;
+			sourceTree = "<group>";
+		};
+		6BDB6F0918AB544300BFE743 /* Wow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Wow;
+			sourceTree = "<group>";
+		};
+		6BDB6F1818AB5A3D00BFE743 /* RCUnit */ = {
+			isa = PBXGroup;
+			children = (
+				6BDB6F1F18AB5A6600BFE743 /* RCUnit.cpp */,
+				6BDB6F2018AB5A6600BFE743 /* RCUnit.h */,
+				6BDB6F2118AB5A6600BFE743 /* RCUnitCache.cpp */,
+				6BDB6F2218AB5A6600BFE743 /* RCUnitCache.h */,
+			);
+			name = RCUnit;
+			sourceTree = "<group>";
+		};
+		6BDB6F2518AB5AB700BFE743 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				6BDB6F2C18AB5F6500BFE743 /* func.h */,
+				6BDB6F1818AB5A3D00BFE743 /* RCUnit */,
+			);
+			name = Node;
+			sourceTree = "<group>";
+		};
+		6BDB6F2618AB5B3900BFE743 /* Enemy */ = {
+			isa = PBXGroup;
+			children = (
+				6BDB6F2718AB5B5900BFE743 /* Enemy.cpp */,
+				6BDB6F2818AB5B5900BFE743 /* Enemy.h */,
+			);
+			name = Enemy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2153,12 +2323,28 @@
 			mainGroup = 6BDB6ACB18AA47DA00BFE743;
 			productRefGroup = 6BDB6AD518AA47DA00BFE743 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6B07124D18AB629600F9F97D /* Products */;
+					ProjectRef = 6BDB6EB718AA497E00BFE743 /* CocosAI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6BDB6AD318AA47DA00BFE743 /* CocosAIDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6B07125118AB629600F9F97D /* libCocosAI.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCocosAI.a;
+			remoteRef = 6B07125018AB629600F9F97D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6BDB6AD218AA47DA00BFE743 /* Resources */ = {
@@ -2168,14 +2354,19 @@
 				6BDB6AFA18AA47DA00BFE743 /* Icon.png in Resources */,
 				6BDB6B9D18AA47DB00BFE743 /* ChangeLog in Resources */,
 				6BDB6AEA18AA47DA00BFE743 /* CloseNormal.png in Resources */,
+				6BDB6F1418AB572600BFE743 /* Imagesetfile in Resources */,
 				6BDB6AF618AA47DA00BFE743 /* Icon-Small.png in Resources */,
 				6BDB6AF218AA47DA00BFE743 /* Icon-72.png in Resources */,
+				6BDB6EFC18AB4F1800BFE743 /* ccbi in Resources */,
 				6BDB6AF018AA47DA00BFE743 /* HelloWorld.png in Resources */,
 				6BDB6AF418AA47DA00BFE743 /* Icon-Small-50.png in Resources */,
+				6BDB6F2B18AB5E1800BFE743 /* comicwar in Resources */,
 				6BDB6AFE18AA47DA00BFE743 /* iTunesArtwork in Resources */,
 				6BDB6AF818AA47DA00BFE743 /* Icon-Small@2x.png in Resources */,
 				6BDB6AEE18AA47DA00BFE743 /* Default.png in Resources */,
+				6BDB6EFA18AB4F0900BFE743 /* ui in Resources */,
 				6BDB6AEC18AA47DA00BFE743 /* CloseSelected.png in Resources */,
+				6BDB6EF918AB4F0900BFE743 /* font in Resources */,
 				6BDB6AFC18AA47DA00BFE743 /* Icon@2x.png in Resources */,
 				6BDB6D1118AA47DE00BFE743 /* project.pbxproj in Resources */,
 			);
@@ -2217,6 +2408,7 @@
 				6BDB6E5D18AA47E000BFE743 /* cpShape.c in Sources */,
 				6BDB6DA818AA47DF00BFE743 /* CCEditBoxImplTizen.cpp in Sources */,
 				6BDB6E6B18AA47E000BFE743 /* cpSweep1D.c in Sources */,
+				6BDB6EFF18AB4F2F00BFE743 /* MainMenu.cpp in Sources */,
 				6BDB6D3F18AA47DE00BFE743 /* CCLayerColorLoader.cpp in Sources */,
 				6BDB6BD118AA47DB00BFE743 /* CCTransition.cpp in Sources */,
 				6BDB6BDB18AA47DB00BFE743 /* CCMenu.cpp in Sources */,
@@ -2279,6 +2471,7 @@
 				6BDB6B3E18AA47DA00BFE743 /* CCConfiguration.cpp in Sources */,
 				6BDB6B2818AA47DA00BFE743 /* CCActionPageTurn3D.cpp in Sources */,
 				6BDB6E6918AA47E000BFE743 /* cpSpatialIndex.c in Sources */,
+				6BBABBBC18AC8DB300CE076F /* Player.cpp in Sources */,
 				6BDB6DE718AA47DF00BFE743 /* Bone.cpp in Sources */,
 				6BDB6BBD18AA47DB00BFE743 /* CCKeypadDispatcher.cpp in Sources */,
 				6BDB6CB918AA47DD00BFE743 /* CCUserDefault.mm in Sources */,
@@ -2286,6 +2479,7 @@
 				6BDB6D3318AA47DE00BFE743 /* CCControlLoader.cpp in Sources */,
 				6BDB6B6718AA47DB00BFE743 /* CCSet.cpp in Sources */,
 				6BDB6DDE18AA47DF00BFE743 /* AtlasAttachmentLoader.cpp in Sources */,
+				6BDB6F1718AB575C00BFE743 /* ComicWarUI.cpp in Sources */,
 				6BDB6C5618AA47DD00BFE743 /* CCScriptSupport.cpp in Sources */,
 				6BDB6D5218AA47DE00BFE743 /* CCNodeLoader.cpp in Sources */,
 				6BDB6DF018AA47DF00BFE743 /* CCSkeletonAnimation.cpp in Sources */,
@@ -2306,6 +2500,7 @@
 				6BDB6B7018AA47DB00BFE743 /* cocos2d.cpp in Sources */,
 				6BDB6B7318AA47DB00BFE743 /* CCDrawingPrimitives.cpp in Sources */,
 				6BDB6BB318AA47DB00BFE743 /* vec2.c in Sources */,
+				6BDB6F2918AB5B5900BFE743 /* Enemy.cpp in Sources */,
 				6BDB6C5D18AA47DD00BFE743 /* ccGLStateCache.cpp in Sources */,
 				6BDB6B3B18AA47DA00BFE743 /* CCCamera.cpp in Sources */,
 				6BDB6DF618AA47DF00BFE743 /* Json.cpp in Sources */,
@@ -2313,12 +2508,14 @@
 				6BDB6D8F18AA47DF00BFE743 /* CCControlSwitch.cpp in Sources */,
 				6BDB6D6D18AA47DE00BFE743 /* CCComController.cpp in Sources */,
 				6BDB6E5918AA47E000BFE743 /* cpHashSet.c in Sources */,
+				6BDB6F0F18AB54E900BFE743 /* ComicWar.cpp in Sources */,
 				6BDB6CB118AA47DD00BFE743 /* tinyxml2.cpp in Sources */,
 				6BDB6D8618AA47DF00BFE743 /* CCControlSaturationBrightnessPicker.cpp in Sources */,
 				6BDB6B5518AA47DB00BFE743 /* CCDataVisitor.cpp in Sources */,
 				6BDB6B1918AA47DA00BFE743 /* CCActionGrid.cpp in Sources */,
 				6BDB6E4718AA47E000BFE743 /* cpRotaryLimitJoint.c in Sources */,
 				6BDB6D2A18AA47DE00BFE743 /* CCBSequenceProperty.cpp in Sources */,
+				6BDB6F2418AB5A6600BFE743 /* RCUnitCache.cpp in Sources */,
 				6BDB6BA918AA47DB00BFE743 /* neon_matrix_impl.c in Sources */,
 				6BDB6E5118AA47E000BFE743 /* cpBB.c in Sources */,
 				6BDB6DB518AA47DF00BFE743 /* CCTableView.cpp in Sources */,
@@ -2327,6 +2524,7 @@
 				6BDB6C2218AA47DC00BFE743 /* CCEGLView.mm in Sources */,
 				6BDB6DE418AA47DF00BFE743 /* AttachmentLoader.cpp in Sources */,
 				6BDB6E3B18AA47DF00BFE743 /* cpDampedSpring.c in Sources */,
+				6BBABBB718AC8C8700CE076F /* Bullet.cpp in Sources */,
 				6BDB6D7618AA47DE00BFE743 /* CCControl.cpp in Sources */,
 				6BDB6B6418AA47DB00BFE743 /* CCObject.cpp in Sources */,
 				6BDB6D9818AA47DF00BFE743 /* CCScale9Sprite.cpp in Sources */,
@@ -2360,10 +2558,12 @@
 				6BDB6DEA18AA47DF00BFE743 /* BoneData.cpp in Sources */,
 				6BDB6D4B18AA47DE00BFE743 /* CCMenuItemLoader.cpp in Sources */,
 				6BDB6C9C18AA47DD00BFE743 /* CCVertex.cpp in Sources */,
+				6BDB6F0418AB4FEF00BFE743 /* SceneManager.cpp in Sources */,
 				6BDB6D0518AA47DE00BFE743 /* CDOpenALSupport.m in Sources */,
 				6BDB6DBC18AA47DF00BFE743 /* LocalStorage.cpp in Sources */,
 				6BDB6D0818AA47DE00BFE743 /* CocosDenshion.m in Sources */,
 				6BDB6C9618AA47DD00BFE743 /* ccUTF8.cpp in Sources */,
+				6BDB6F2318AB5A6600BFE743 /* RCUnit.cpp in Sources */,
 				6BDB6BC418AA47DB00BFE743 /* CCLabelBMFont.cpp in Sources */,
 				6BDB6B3818AA47DA00BFE743 /* CCNode.cpp in Sources */,
 				6BDB6B4718AA47DB00BFE743 /* CCScheduler.cpp in Sources */,
@@ -2513,8 +2713,9 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = CocosAIDemo/Prefix.pch;
+				GCC_PREFIX_HEADER = CocosAIDemo/CocosAI.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = CocosAIDemo/Resources/Info.plist;
 				LIBRARY_SEARCH_PATHS = (
@@ -2539,8 +2740,9 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				COPY_PHASE_STRIP = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = CocosAIDemo/Prefix.pch;
+				GCC_PREFIX_HEADER = CocosAIDemo/CocosAI.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = CocosAIDemo/Resources/Info.plist;
 				LIBRARY_SEARCH_PATHS = (

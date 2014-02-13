@@ -9,7 +9,7 @@
 #include "BTParallel.h"
 #include "RCBehaviorTree.h"
 
-USING_NS_AI;
+namespace CocosAI {
 
 BTParallel::BTParallel()
 {
@@ -23,7 +23,7 @@ BTParallel::~BTParallel()
 
 bool BTParallel::init()
 {
-    if (!CCNode::init())
+    if (!BTNode::init())
     {
         return false;
     }
@@ -51,3 +51,4 @@ int BTParallel::behave()
     return result;
 }
 
+}

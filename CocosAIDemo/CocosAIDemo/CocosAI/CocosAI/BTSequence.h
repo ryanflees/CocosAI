@@ -14,6 +14,8 @@
 
 USING_NS_CC;
 
+namespace CocosAI {
+
 class BTSequence :public BTNode
 {
 public:
@@ -24,5 +26,7 @@ public:
     virtual int behave();
     virtual void actionFinished();
 };
+    
+}
 
 #endif /* defined(__CocosAI__BTSequence__) */

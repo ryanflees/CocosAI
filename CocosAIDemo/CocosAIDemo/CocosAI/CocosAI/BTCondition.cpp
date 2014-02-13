@@ -9,7 +9,7 @@
 #include "BTCondition.h"
 #include "RCBehaviorTree.h"
 
-USING_NS_AI
+namespace CocosAI {
 
 BTCondition::BTCondition():m_delegate()
 {
@@ -23,7 +23,7 @@ BTCondition::~BTCondition()
 
 bool BTCondition::init()
 {
-    if (!CCNode::init())
+    if (!BTNode::init())
     {
         return false;
     }
@@ -36,4 +36,6 @@ int BTCondition::behave()
         return m_delegate->onCheckCondition(this);
     }
     return kBehaveFailure;
+}
+    
 }
