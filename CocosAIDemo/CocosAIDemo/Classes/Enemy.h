@@ -88,6 +88,8 @@ public:
     
     void behave();
     
+    void resetBehavior();
+    
     void spawnAtPosition(cocos2d::CCPoint pos);
     
     void fireBulletAt(cocos2d::CCPoint point);

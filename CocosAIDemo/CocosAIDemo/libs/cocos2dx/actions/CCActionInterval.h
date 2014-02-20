@@ -425,7 +425,7 @@ class CC_DLL CCJumpTo : public CCJumpBy
 public:
     virtual void startWithTarget(CCNode *pTarget);
     virtual CCObject* copyWithZone(CCZone* pZone);
-
+    const CCPoint& getDelta(){return m_delta;}
 public:
     /** creates the action */
     static CCJumpTo* create(float duration, const CCPoint& position, float height, int jumps);

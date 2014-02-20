@@ -407,6 +407,14 @@
 					</dict>
 					<dict>
 						<key>name</key>
+						<string>tag</string>
+						<key>type</key>
+						<string>Integer</string>
+						<key>value</key>
+						<integer>3</integer>
+					</dict>
+					<dict>
+						<key>name</key>
 						<string>ignoreAnchorPointForPosition</string>
 						<key>type</key>
 						<string>Check</string>
@@ -420,8 +428,8 @@
 						<string>BlockCCControl</string>
 						<key>value</key>
 						<array>
-							<string></string>
-							<integer>0</integer>
+							<string>buttonClicked</string>
+							<integer>1</integer>
 							<integer>32</integer>
 						</array>
 					</dict>
@@ -615,6 +623,14 @@
 					</dict>
 					<dict>
 						<key>name</key>
+						<string>tag</string>
+						<key>type</key>
+						<string>Integer</string>
+						<key>value</key>
+						<integer>2</integer>
+					</dict>
+					<dict>
+						<key>name</key>
 						<string>ignoreAnchorPointForPosition</string>
 						<key>type</key>
 						<string>Check</string>
@@ -628,8 +644,8 @@
 						<string>BlockCCControl</string>
 						<key>value</key>
 						<array>
-							<string></string>
-							<integer>0</integer>
+							<string>buttonClicked</string>
+							<integer>1</integer>
 							<integer>32</integer>
 						</array>
 					</dict>
@@ -823,6 +839,14 @@
 					</dict>
 					<dict>
 						<key>name</key>
+						<string>tag</string>
+						<key>type</key>
+						<string>Integer</string>
+						<key>value</key>
+						<integer>4</integer>
+					</dict>
+					<dict>
+						<key>name</key>
 						<string>ignoreAnchorPointForPosition</string>
 						<key>type</key>
 						<string>Check</string>
@@ -836,8 +860,8 @@
 						<string>BlockCCControl</string>
 						<key>value</key>
 						<array>
-							<string></string>
-							<integer>0</integer>
+							<string>buttonClicked</string>
+							<integer>1</integer>
 							<integer>32</integer>
 						</array>
 					</dict>
@@ -1051,7 +1075,7 @@
 						<key>type</key>
 						<string>Text</string>
 						<key>value</key>
-						<string>Behavior tree</string>
+						<string>comic war</string>
 					</dict>
 				</array>
 			</dict>
@@ -1124,6 +1148,83 @@
 							<string></string>
 							<string>ui/ryancat.png</string>
 						</array>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>baseClass</key>
+				<string>CCLabelBMFont</string>
+				<key>children</key>
+				<array/>
+				<key>customClass</key>
+				<string></string>
+				<key>displayName</key>
+				<string>CCLabelBMFont</string>
+				<key>memberVarAssignmentName</key>
+				<string></string>
+				<key>memberVarAssignmentType</key>
+				<integer>0</integer>
+				<key>properties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>position</string>
+						<key>type</key>
+						<string>Position</string>
+						<key>value</key>
+						<array>
+							<real>185.69761657714844</real>
+							<real>267.00390625</real>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>anchorPoint</string>
+						<key>type</key>
+						<string>Point</string>
+						<key>value</key>
+						<array>
+							<real>0.5</real>
+							<real>0.5</real>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>scale</string>
+						<key>type</key>
+						<string>ScaleLock</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+							<false/>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>ignoreAnchorPointForPosition</string>
+						<key>type</key>
+						<string>Check</string>
+						<key>value</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>fntFile</string>
+						<key>type</key>
+						<string>FntFile</string>
+						<key>value</key>
+						<string>font/font_4.fnt</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>string</string>
+						<key>type</key>
+						<string>Text</string>
+						<key>value</key>
+						<string>kingdom rush</string>
 					</dict>
 				</array>
 			</dict>

@@ -39,19 +39,7 @@ int BTAction::behave()
 	}
 	else
 	{
-		int result = m_delegate->onBehaviorTreeActon(this);
-		if (result == kBehaveSuccess)
-		{
-			return kBehaveSuccess;
-		}
-		else if (result == kBehavePending)
-		{
-			return kBehavePending;
-		}
-		else
-		{
-			return kBehaveFailure;
-		}
+        return m_delegate->onBehaviorTreeActon(this);
 	}
 }
 

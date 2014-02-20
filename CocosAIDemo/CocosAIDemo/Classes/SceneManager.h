@@ -29,6 +29,7 @@ public:
     void showMainMenu();
     void returnMainMenu();
     void switchToComicWar();
+    void switchToKingdomRush();
     void registerCustomControlsForNodeloader(CCNodeLoaderLibrary *pLoaderLibrary);
 private:
     

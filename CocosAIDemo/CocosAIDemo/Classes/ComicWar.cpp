@@ -48,6 +48,7 @@ void ComicWar::onExit()
 {
     CCNode::onExit();
     CCDirector::sharedDirector()->getTouchDispatcher()->removeDelegate(this);
+    unscheduleUpdate();
 }
 
 void ComicWar::loadResource()
@@ -70,7 +71,7 @@ void ComicWar::addEnemy()
     addChild(m_enemyTroops);
     for (int i=0; i<m_enemyTroops->getUnitCount(); i++) {
         Enemy *unit = (Enemy*)m_enemyTroops->getUnitByIndex(i);
-        float x = (int)(arc4random()%960);
+    //    float x = (int)(arc4random()%960);
         float y = (int)(arc4random()%640);
     //    unit->setVisible(true);
     //    unit->setPosition(ccp(x,y));
@@ -196,13 +197,15 @@ void ComicWar::update(float dt)
         CCPoint newPos = ccp(position.x+dt*velocity.x,position.y + dt*velocity.y);
         enemy->setPosition(newPos);
         CCSize screenSize = CCDirector::sharedDirector()->getWinSize();
-        if (enemy->getZOrder() != screenSize.height - enemy->getPositionY()) {
-            CCSpriteBatchNode *batch = dynamic_cast<CCSpriteBatchNode*>(enemy->getParent());
-            batch->reorderChild(enemy, screenSize.height - enemy->getPositionY());
-        }
+        
+        CCSpriteBatchNode *batch = dynamic_cast<CCSpriteBatchNode*>(enemy->getParent());
+        batch->reorderChild(enemy, 0);
+        batch->reorderChild(enemy, screenSize.height - enemy->getPositionY());
+        
         if(newPos.x < -40)
         {
             enemy->setIsActive(false);
+            enemy->resetBehavior();
         }
     }
     

@@ -20,7 +20,7 @@ USING_NS_CC;
 
 Enemy::~Enemy()
 {
-    CC_SAFE_RELEASE(m_behavior);
+    m_behavior->release();
 }
 
 Enemy* Enemy::createWithSpriteFrameNameAndKey(const char *frameName, AnimationParam *animationParam, const char *key)
@@ -104,13 +104,17 @@ void Enemy::stand()
     
 }
 
-
 void Enemy::behave()
 {
     if (!m_isActive || !m_isAlive) {
         return;
     }
     m_behavior->behave();
+}
+
+void Enemy::resetBehavior()
+{
+    m_behavior->resetBehavior();
 }
 
 void Enemy::spawnAtPosition(cocos2d::CCPoint pos)
@@ -229,8 +233,6 @@ EnemyCache *EnemyCache::createWithCount(int count)
 
 bool EnemyCache::initWithCount(int count)
 {
-
-    
     if (!CCNode::init()) {
         return false;
     }
@@ -277,7 +279,6 @@ void EnemyCache::addForms()
     
     addSubFormCacheWithSpriteFrameNameAndKey("gunmanfall1_01.png", enemyActionKeys[kEnemyActionKeyFall1], &param);
     
-    
     param.frameName = "gunmanfall2_";
     param.interval = 0.1f;
     param.loops = 1;
@@ -291,7 +292,6 @@ void EnemyCache::addForms()
     param.restoreFirstFrame = false;
     param.count = 7;
     addSubFormCacheWithSpriteFrameNameAndKey("gunmanfall3_01.png", enemyActionKeys[kEnemyActionKeyFall3], &param);
-    
     
     addEnemyProneAnimation();
     addEnemyProneCreepAnimation();

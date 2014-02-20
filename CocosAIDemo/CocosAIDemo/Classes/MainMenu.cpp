@@ -8,6 +8,7 @@
 
 #include "MainMenu.h"
 #include "SceneManager.h"
+#include "ArrowTest.h"
 
 MainMenu::MainMenu()
 {
@@ -67,5 +68,19 @@ void MainMenu::onNodeLoaded(CCNode *pNode, CCNodeLoader *pNodeLoader)
 
 void MainMenu::onButtonClicked(CCObject* object)
 {
-    SceneManager::sharedSceneManager()->switchToComicWar();
+    CCNode *node = (CCNode*)object;
+    if (node->getTag() == 1) {
+        SceneManager::sharedSceneManager()->switchToComicWar();
+    }
+    else if (node->getTag() == 2)
+    {
+        SceneManager::sharedSceneManager()->switchToKingdomRush();
+    }
+    else if (node->getTag() == 3)
+    {
+        CCScene *scene = CCScene::create();
+        ArrowTest *node = ArrowTest::create();
+        scene->addChild(node);
+        CCDirector::sharedDirector()->pushScene(scene);
+    }
 }

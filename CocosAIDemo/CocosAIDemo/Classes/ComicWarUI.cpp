@@ -59,7 +59,6 @@ bool ComicWarUI::onAssignCCBCustomProperty(CCObject* pTarget, const char* pMembe
     return false;
 }
 
-
 void ComicWarUI::onNodeLoaded(CCNode *pNode, CCNodeLoader *pNodeLoader)
 {
     if (m_returnButton) {

@@ -10,6 +10,8 @@
 #include "MainMenu.h"
 #include "ComicWar.h"
 #include "ComicWarUI.h"
+#include "KingdomRush.h"
+#include "KingdomRushUI.h"
 
 SceneManager::SceneManager()
 {
@@ -71,6 +73,23 @@ void SceneManager::switchToComicWar()
     CCNode *comicWarUI = ccbReader->readNodeGraphFromFile("ccbi/comic_war_ui.ccbi");
     ccbReader->release();
     node->addChild(comicWarUI,5);
+    
+    CCDirector::sharedDirector()->pushScene(pScene);
+}
+
+void SceneManager::switchToKingdomRush()
+{
+    CCScene *pScene = CCScene::create();
+    KingdomRush *node = KingdomRush::create();
+    pScene->addChild(node);
+    
+    CCNodeLoaderLibrary *pLoaderLibrary = CCNodeLoaderLibrary::newDefaultCCNodeLoaderLibrary();
+    CCBReader *ccbReader = new CCBReader(pLoaderLibrary);
+    registerCustomControlsForNodeloader(pLoaderLibrary);
+    pLoaderLibrary->registerCCNodeLoader("KingdomRushUI", KingdomRushUILoader::loader());
+    CCNode *kingdomRushUI = ccbReader->readNodeGraphFromFile("ccbi/kingdom_rush_ui.ccbi");
+    ccbReader->release();
+    node->addChild(kingdomRushUI,5);
     
     CCDirector::sharedDirector()->pushScene(pScene);
 }

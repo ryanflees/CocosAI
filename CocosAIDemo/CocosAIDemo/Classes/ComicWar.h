@@ -41,6 +41,7 @@ public:
     
     virtual cocos2d::CCArray* getActiveBullets(Enemy* enemy);
     virtual void onEnemyFall(Enemy* enemy);
+    
  private:
     void loadResource();
     void addBackground();
